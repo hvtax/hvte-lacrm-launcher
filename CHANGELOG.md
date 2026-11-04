@@ -1,1 +1,9 @@
-IyBDaGFuZ2Vsb2cKCiMjIDEuMC4xCgotIEZpeDogcmVtb3ZlZCB0aGUgcGFnZS1yZWFsbSBoaXN0b3J5IChwdXNoU3RhdGUvcmVwbGFjZVN0YXRlKSB3cmFwcGluZyBhZGRlZCBpbiAxLjAuMCwgd2hpY2ggaW50ZXJmZXJlZCB3aXRoIExlc3MgQW5ub3lpbmcgQ1JNJ3Mgb3duIGxpbmsgaGFuZGxpbmcgYW5kIG1hZGUgTEFDUk0gbGlua3MgdW5yZXNwb25zaXZlIHRvIGxlZnQtY2xpY2tzLiBJbi1wYWdlIG5hdmlnYXRpb24gaXMgc3RpbGwgdHJhY2tlZCBieSB0aGUgbG9jYXRpb24gcG9sbCwgYW5kIGFjdGlvbnMgc3RpbGwgcmUtcmVhZCB0aGUgY3VycmVudCBVUkwgYXQgY2xpY2sgdGltZS4KCiMjIDEuMC4wCgotIEluaXRpYWwgRmlyZWZveCBsYXVuY2hlciB3aXRoIHRocmVlIG93bmVyLXNwZWNpZmllZCBhY3Rpb25zLCBDb3B5IENvbnRhY3RJZCwgYW5kIGNsaWNrLXRpbWUgY29udGFjdCBjaGVja3MuCg==
+# Changelog
+
+## 1.0.1
+
+- Fix: removed the page-realm history (pushState/replaceState) wrapping added in 1.0.0, which interfered with Less Annoying CRM's own link handling and made LACRM links unresponsive to left-clicks. In-page navigation is still tracked by the location poll, and actions still re-read the current URL at click time.
+
+## 1.0.0
+
+- Initial Firefox launcher with three owner-specified actions, Copy ContactId, and click-time contact checks.

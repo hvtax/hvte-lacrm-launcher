@@ -1,0 +1,10 @@
+{
+  "addons": {
+    "hvte-lacrm-launcher@hvtaxexperts.com": {
+      "updates": [{
+        "version": "1.0.0",
+        "update_link": "https://github.com/hvtax/hvte-lacrm-launcher/releases/download/v1.0.0/hvte-lacrm-launcher-1.0.0.xpi"
+      }]
+    }
+  }
+}

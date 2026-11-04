@@ -1,0 +1,11 @@
+node_modules/
+web-ext-artifacts/
+*.xpi
+.env
+.env.*
+*credentials*
+*amo-key*
+*amo-secret*
+.tools/
+.qa/
+.codex-attachments/

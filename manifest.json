@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "HVTE LACRM Launcher",
+  "version": "1.0.0",
+  "description": "Staff shortcuts for Hudson Valley Tax Experts on Less Annoying CRM.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hvte-lacrm-launcher@hvtaxexperts.com",
+      "update_url": "https://hvtax.github.io/hvte-lacrm-launcher/updates.json",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  },
+  "content_scripts": [{
+    "matches": ["https://account.lessannoyingcrm.com/*"],
+    "js": ["src/lib.js", "src/config.js", "src/actions.js", "src/content.js"],
+    "css": ["src/content.css"],
+    "run_at": "document_start"
+  }]
+}

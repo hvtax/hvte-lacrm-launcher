@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "HVTE LACRM Launcher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Staff shortcuts for Hudson Valley Tax Experts on Less Annoying CRM.",
   "browser_specific_settings": {
     "gecko": {

@@ -9,24 +9,22 @@
    openIn: "newTab" (default if omitted) or "sameTab".
    After ANY edit, bump "version" in manifest.json and follow RELEASE.md.
    NEVER paste a real client URL containing a real ContactId into this file.
-   These three targets are owner-approved placeholders for right now. The
-   owner may replace labels, targets, or JSON keys in a later release.
+   Menu history: v1.0.0 shipped with Invoice, New Contact, and Record (Tom)
+   as owner-approved placeholders. v1.0.2 removed Invoice and Record (Tom)
+   at the owner's request and added Set Up New Client, which opens the
+   SetUpNewClient Cognito form; that form's Zap adds the household to the
+   LACRM group "7.02 Setup HH as new client/prospect" to start setup.
    Preserve the single-quoted Cognito prefill fragments exactly as written.
    ===================================================================== */
 globalThis.HVTE_ACTIONS = [
-  {
-    "type": "action", "label": "Invoice",
-    "url": "https://www.cognitoforms.com/HudsonValleyTaxExperts1/InvoiceForServices2024?entry={'TargetID':'<CONTACTID>'}",
-    "openIn": "newTab"
-  },
   {
     "type": "action", "label": "New Contact",
     "url": "https://www.cognitoforms.com/hudsonvalleytaxexperts1/createlacrmcontact",
     "openIn": "newTab"
   },
   {
-    "type": "action", "label": "Record (Tom)",
-    "url": "https://www.cognitoforms.com/HudsonValleyTaxExperts1/ClientPayment2?entry={'LACRMContact':'<CONTACTID>'}",
+    "type": "action", "label": "Set Up New Client",
+    "url": "https://www.cognitoforms.com/HudsonValleyTaxExperts1/SetUpNewClient?entry={'TargetID':'<CONTACTID>'}",
     "openIn": "newTab"
   }
   // ,{ "type": "heading", "label": "Resources" }
